@@ -1,0 +1,10 @@
+.selectLang {
+    margin-left: 20px;
+    background-color: $primaryColor;
+    transition: all 0.2s;
+}
+
+.selectLang:focus {
+    outline: none;
+    background-color: white;
+}

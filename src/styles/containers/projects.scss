@@ -1,0 +1,61 @@
+.projects {
+    text-align: center;
+
+    &__items {
+        padding: 10px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+}
+
+@include media-up(ls) {
+    .projects {
+        text-align: start;
+        padding: 0px 30px;
+
+    }
+}
+
+@include media-up(lg) {
+    .projects {
+        text-align: start;
+        padding: 0px 30px;
+
+        &__items {
+            display: grid;
+            place-content: center;
+            grid-template-columns: 500px 500px;
+            row-gap: 30px;
+        }
+
+
+    }
+}
+
+@include media-up(lg) {
+    .projects {
+        padding-top: 44px;
+
+    }
+}
+
+@include media-up(xl) {
+    .projects {
+        text-align: start;
+        padding: 0px 30px;
+        padding-top: 44px;
+
+        &__items {
+            column-gap: 60px;
+            row-gap: 60px;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+    }
+}

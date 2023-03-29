@@ -1,0 +1,29 @@
+.skills {
+    padding: 24px 0;
+    text-align: center;
+}
+
+@include media-up(ls) {
+    .skills {
+        padding-inline: 30px;
+        text-align: start;
+
+        h3 {
+            text-align: center;
+            margin: 40px 0;
+        }
+    }
+
+}
+
+@include media-up(lg) {
+    .skills {
+        padding-top: 50px;
+
+        h2 {
+            margin-bottom: 48px;
+        }
+
+
+    }
+}

@@ -1,0 +1,63 @@
+.menuRes,
+.menuOpen {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    box-shadow: $shadow;
+    background-color: $blackColor;
+    transition: all 0.3s;
+    transform-origin: top right;
+
+}
+
+.menuResBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 30px;
+    // background-color: powderblue;
+
+    button {
+        width: 100px;
+        margin: 12px auto;
+    }
+
+    a:nth-child(3) {
+        margin-bottom: 12px;
+    }
+
+    .selectLang {
+        width: 100px;
+        margin: 0;
+    }
+}
+
+.menuRes {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    &__icon {
+        display: flex;
+        justify-content: end;
+        padding-right: 2px;
+    }
+}
+
+.menuOpen {
+    width: 200px;
+    height: 320px;
+    border-radius: 12px;
+
+    &__icon {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+@include media-up(lg) {
+    .menuRes {
+        display: none;
+    }
+}

@@ -1,0 +1,22 @@
+.education {
+    padding: 24px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 30px;
+    }
+}
+
+@include media-up(ls) {
+    .education {
+        text-align: start;
+        padding: 60px 30px 20px 30px;
+
+    }
+}
+
+@include media-up(xl) {
+    .education {
+        padding: 80px 30px 20px 30px;
+    }
+}

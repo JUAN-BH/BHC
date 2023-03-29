@@ -1,0 +1,64 @@
+.aboutMe__info {
+    h2 {
+        margin: 20px 0;
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+
+        svg {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            path {
+                fill: white;
+                box-shadow: $shadow;
+            }
+        }
+
+        a:nth-child(2) {
+            margin-inline: 16px;
+        }
+
+        svg:hover {
+            scale: 1.2;
+        }
+
+    }
+}
+
+.btn--cv {
+    padding: 8px;
+    // color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: $shadow;
+    background-color: $primaryColor;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn--cv:hover {
+    scale: 1.1;
+}
+
+@include media-up(xl) {
+    .aboutMe__info {
+        width: 70%;
+        text-align: start;
+
+        &__social {
+            justify-content: start;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+    }
+}

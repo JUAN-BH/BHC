@@ -1,0 +1,23 @@
+footer {
+    margin-top: 40px;
+    padding: 20px;
+
+    article {
+        display: inline-block;
+        border-top: 1px solid rgb(52, 152, 219);
+
+        p {
+            font-size: 2rem;
+        }
+    }
+
+}
+
+@include media-up(lg) {
+    footer {
+        article {
+            display: block;
+            border-top: 1px solid rgb(52, 152, 219);
+        }
+    }
+}

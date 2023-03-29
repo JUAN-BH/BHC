@@ -1,0 +1,40 @@
+.education__educationItem {
+    max-width: 1100px;
+
+    padding: 20px;
+    margin: 0 0 20px 0;
+    text-align: center;
+
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset $shadow;
+    background-color: $blackColor;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    &__date {
+        margin: 20px 0;
+    }
+}
+
+
+@include media-up(ls) {
+    .education__educationItem {
+        text-align: start;
+
+        h3 {
+            text-align: start;
+            margin: 0;
+        }
+    }
+}
+
+@include media-up(lg) {
+    .education__educationItem {
+        height: 220px;
+        margin: 30px auto;
+        text-align: start;
+    }
+}

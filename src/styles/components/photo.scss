@@ -1,0 +1,31 @@
+.aboutMe__photoContainer {
+
+    &__photo {
+        overflow: hidden;
+        width: 210px;
+        height: 210px;
+        margin: 20px auto;
+        border-radius: 50%;
+        // background-color: $grayLow;
+        background-color: #C4C4C4;
+        box-shadow: $shadow;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@include media-up(xl) {
+    .aboutMe__photoContainer {
+        // width: 30%;
+
+        &__photo {
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
