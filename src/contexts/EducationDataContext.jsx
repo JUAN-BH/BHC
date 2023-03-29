@@ -26,12 +26,12 @@ export const EducationDataContextProvider = ({ children }) => {
 
   const UAO = new Education({
     name: UAOTitle,
-    date: "07/2017 - ",
+    date: `07/2017 - ${langSelected == "es" ? "presente" : "present"}`,
     description: UAODes,
   });
   const platzi = new Education({
     name: platziTitle,
-    date: "08/2021 - ",
+    date: `08/2021 - ${langSelected == "es" ? "presente" : "present"}`,
     description: platziDes,
   });
 

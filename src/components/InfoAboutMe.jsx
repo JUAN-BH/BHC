@@ -6,10 +6,13 @@ import { Io } from "../containers/Io";
 export const InfoAboutMe = () => {
   const { langSelected } = useLangContext();
 
+  const cv =
+    langSelected === "es"
+      ? "/public/docs/SPANISH_CV.pdf"
+      : "/public/docs/ENGLISH_CV.pdf";
+
   function downloadCV() {
-    console.log("entro");
-    const url = "/public/docs/ENGLISH_CV.pdf";
-    window.open(url);
+    window.open(cv);
   }
   const text = langSelected === "es" ? langs.es.aboutMe : langs.en.aboutMe;
   return (

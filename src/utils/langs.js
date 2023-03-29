@@ -26,7 +26,7 @@ export const langs = {
     },
     skills: {
       title: "Habilidades",
-      subTitle: "Aprendiendo",
+      subTitle: "Actualmente aprendiendo",
     },
     projects: {
       title: "Proyectos",
@@ -61,7 +61,7 @@ export const langs = {
         },
       ],
     },
-    lastUpt: "Ultima actualización",
+    lastUpt: "Última actualización",
   },
   en: {
     menu: {
@@ -90,7 +90,7 @@ export const langs = {
     },
     skills: {
       title: "Skills",
-      subTitle: "Learning",
+      subTitle: "Currently learning",
     },
     projects: {
       title: "Projects",
