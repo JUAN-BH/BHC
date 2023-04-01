@@ -2,18 +2,11 @@ import React from "react";
 import { useLangContext } from "../contexts/LangContext";
 import { langs } from "../utils/langs";
 import { Io } from "../containers/Io";
+import BtnDownloader from "./BtnDownloader";
 
 export const InfoAboutMe = () => {
   const { langSelected } = useLangContext();
 
-  const cv =
-    langSelected === "es"
-      ? "/public/docs/SPANISH_CV.pdf"
-      : "/public/docs/ENGLISH_CV.pdf";
-
-  function downloadCV() {
-    window.open(cv);
-  }
   const text = langSelected === "es" ? langs.es.aboutMe : langs.en.aboutMe;
   return (
     <article className="aboutMe__info">
@@ -52,9 +45,7 @@ export const InfoAboutMe = () => {
               />
             </svg>
           </a>
-          <button class="btn--cv" onClick={downloadCV}>
-            {langSelected == "es" ? "Descargar HV" : "Download CV"}
-          </button>
+          <BtnDownloader />
         </div>
         <p>{text}</p>
       </Io>
