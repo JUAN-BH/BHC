@@ -2,14 +2,13 @@ import React from "react";
 
 function LavaBlobs() {
   return (
-    <div className="back">
-      <div className="bubble"></div>
-      <div className="bubble"></div>
-      <div className="bubble"></div>
-      <div className="bubble"></div>
-      <div className="bubble"></div>
-      <div className="bubble"></div>
-    </div>
+    <section className="blobCont">
+      <div className="blob"></div>
+      <div className="blob"></div>
+      <div className="blob"></div>
+      <div className="blob"></div>
+      <div className="blob"></div>
+    </section>
   );
 }
 

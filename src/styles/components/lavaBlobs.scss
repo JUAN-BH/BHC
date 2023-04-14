@@ -1,6 +1,6 @@
 @keyframes updown {
     0% {
-        top: 110%;
+        top: 100%;
     }
 
     50% {
@@ -8,13 +8,13 @@
     }
 
     100% {
-        top: 110%;
+        top: 100%;
     }
 }
 
 @keyframes leftright {
     0% {
-        left: 0;
+        left: 0%;
     }
 
     50% {
@@ -26,28 +26,27 @@
     }
 }
 
-@keyframes vastag {
-    0% {
-        width: 8vh;
-    }
+// @keyframes deform {
+//     0% {
+//         border-radius: 48% 53% 35% 64% / 42% 38% 53% 50%;
+//     }
 
-    50% {
-        width: 32vh;
-    }
+//     50% {
+//         border-radius: 56% 50% 38% 60% / 38% 32% 58% 46%;
+//     }
 
-    100% {
-        width: 8vh;
-    }
-}
+//     100% {
+//         border-radius: 48% 53% 35% 64% / 42% 38% 53% 50%;
+//     }
+// }
 
-@keyframes forog {
+@keyframes spin {
     100% {
         transform: rotate(360deg);
     }
 }
 
-
-.back {
+.blobCont {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -57,49 +56,76 @@
     background: #1e1e1e;
 }
 
-.bubble {
+.blob {
     position: absolute;
-    height: 16vh;
+    width: 200px;
+    height: 210px;
     box-shadow: $shadow;
-    border-radius: 58% 43% 33% 64% / 50% 38% 53% 50%;
-    background: rgb(52, 152, 219);
-    animation: updown linear 37s infinite,
-        leftright ease-in-out 23s infinite,
-        vastag linear 19s infinite,
-        forog linear 31s infinite;
+    background-color: rgb(52, 152, 219);
+    transition: all 0.1s;
 }
 
-.bubble:nth-child(2) {
-    animation: updown ease-in 41s infinite,
-        leftright ease-in-out 47s infinite,
-        vastag linear 11s infinite,
-        forog linear 29s infinite;
+.blob:first-child {
+    animation:
+        updown ease-out 42s infinite,
+        leftright ease-in-out 54s infinite,
+        deform ease 3s infinite,
+        spin ease-in-out 33s infinite;
+    border-radius: 48% 53% 35% 64% / 42% 38% 53% 50%;
+
 }
 
-.bubble:nth-child(3) {
-    animation: updown ease-out 43s infinite,
-        leftright ease-in-out 53s infinite,
-        vastag linear 16s infinite,
-        forog linear 31s infinite;
+
+.blob:nth-child(2) {
+    animation:
+        updown ease-out 48s infinite,
+        leftright ease-in-out 58s infinite,
+        deform ease-in-out 6s infinite,
+        spin ease-in-out 33s infinite;
+    border-radius: 42% 50% 38% 66% / 40% 33% 57% 54%;
+
+
 }
 
-.bubble:nth-child(4) {
-    animation: updown ease-in-out 47s infinite,
-        leftright ease-in-out 59s infinite,
-        vastag linear 24s infinite,
-        forog linear 41s infinite;
+.blob:nth-child(3) {
+    animation:
+        updown ease-out 35s infinite,
+        leftright ease-in-out 42s infinite,
+        deform ease-in-out 8s infinite,
+        spin ease-in-out 33s infinite;
+    border-radius: 48% 53% 33% 58% / 42% 34% 55% 50%;
+
+
 }
 
-.bubble:nth-child(5) {
-    animation: updown ease-in-out 29s infinite,
-        leftright ease-in-out 31s infinite,
-        vastag linear 27s infinite,
-        forog linear 47s infinite;
+.blob:nth-child(4) {
+    animation:
+        updown ease-out 57s infinite,
+        leftright ease-in-out 65s infinite,
+        deform ease-in-out 6s infinite,
+        spin ease-in-out 33s infinite;
+    border-radius: 40% 53% 31% 59% / 42% 32% 53% 45%;
+
+
 }
 
-.bubble:last-child {
-    animation: updown linear 53s infinite,
-        leftright ease-in-out 29s infinite,
-        vastag linear 19s infinite,
-        forog linear 37s infinite;
+.blob:nth-child(5) {
+    animation:
+        updown ease-out 50s infinite,
+        leftright ease-in-out 46s infinite,
+        deform ease-in-out 9s infinite,
+        spin ease-in-out 33s infinite;
+    border-radius: 48% 59% 35% 64% / 42% 35% 53% 50%;
+
+
+}
+
+.blob:last-child {
+    animation:
+        updown ease-out 46s infinite,
+        leftright ease-in-out 50s infinite,
+        deform ease-in-out 6s infinite,
+        spin ease-in-out 33s infinite;
+    border-radius: 38% 43% 35% 64% / 42% 58% 33% 50%;
+
 }

@@ -16,7 +16,7 @@ const BtnDownloader = () => {
   };
 
   return (
-    <button class="btn--cv" onClick={generatePdf}>
+    <button className="btn--cv" onClick={generatePdf}>
       {langSelected == "es" ? "Descargar HV" : "Download CV"}
     </button>
   );

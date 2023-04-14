@@ -22,8 +22,8 @@
             }
         }
 
-        a:nth-child(2) {
-            margin-inline: 16px;
+        a {
+            margin-right: 16px;
         }
 
         svg:hover {
@@ -35,7 +35,7 @@
 
 .btn--cv {
     padding: 8px;
-    // color: #fff;
+    color: #fff;
     border: none;
     border-radius: 8px;
     box-shadow: $shadow;
