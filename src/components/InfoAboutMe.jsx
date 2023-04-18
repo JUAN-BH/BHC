@@ -12,13 +12,16 @@ export const InfoAboutMe = () => {
   return (
     <article className="aboutMe__info">
       <Io animation="animate__animated animate__fadeIn">
-        <h1>Juan Manuel Becerra</h1>
-        <h2>Front-end dev</h2>
-        <div className="aboutMe__info__social">
+        <div className="">
+
+         <h1>Juan Manuel Becerra</h1>
+         <h2>Front-end dev</h2>
+          <div className="aboutMe__info__social">
           <SocialMedia/>
           <BtnDownloader />
+          </div>
+         <p>{text}</p>
         </div>
-        <p>{text}</p>
       </Io>
     </article>
   );

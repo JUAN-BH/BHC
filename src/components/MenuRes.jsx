@@ -13,7 +13,7 @@ export const MenuRes = () => {
   const ski = langSelected === "es" ? langs.es.menu.ski : langs.en.menu.ski;
   const pro = langSelected === "es" ? langs.es.menu.pro : langs.en.menu.pro;
 
-  function handleSetActive(to) {
+  function handleSetActive() {
     setIsOpen(false);
   }
 
