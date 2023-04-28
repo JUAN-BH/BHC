@@ -1,41 +1,52 @@
+import htmlImg from "../assets/imgSkills/html.svg"
+import cssImg from "../assets/imgSkills/css.svg"
+import jsImg from "../assets/imgSkills/js.svg"
+import webpackImg from "../assets/imgSkills/webpack.svg"
+import sassImg from "../assets/imgSkills/sass.svg"
+import reactImg from "../assets/imgSkills/reactIcon.png"
+import viteImg from "../assets/imgSkills/vite.svg"
+import reduxImg from "../assets/imgSkills/redux.png"
+import formikImg from "../assets/imgSkills/formik.png"
+import tailwindImg from "../assets/imgSkills/tailwind.png"
+
 const html = {
-    img: './src/assets/imgSkills/html.svg',
+    img: htmlImg,
     name: 'html'
 }
 const css = {
-    img: './src/assets/imgSkills/css.svg',
+    img: cssImg,
     name: 'css'
 }
 const js = {
-    img: './src/assets/imgSkills/js.svg',
+    img: jsImg,
     name: 'js'
 }
 const webpack = {
-    img: './src/assets/imgSkills/webpack.svg',
+    img: webpackImg,
     name: 'webpack'
 }
 const sass = {
-    img: './src/assets/imgSkills/sass.svg',
+    img: sassImg,
     name: 'sass'
 }
 const react = {
-    img: './src/assets/imgSkills/reactIcon.png',
+    img: reactImg,
     name: 'react'
 }
 const vite = {
-    img: './src/assets/imgSkills/vite.svg',
+    img: viteImg,
     name: 'vite'
 }
 const redux = {
-    img: './src/assets/imgSkills/redux.png',
+    img: reduxImg,
     name: 'redux'
 }
 const formik = {
-    img: './src/assets/imgSkills/formik.png',
+    img: formikImg,
     name: 'formik'
 }
 const tailwind = {
-    img: './src/assets/imgSkills/tailwind.png',
+    img: tailwindImg,
     name: 'tailwind'
 }
 
