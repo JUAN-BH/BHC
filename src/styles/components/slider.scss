@@ -4,7 +4,7 @@
 
     max-width: 115rem;
     height: 100px;
-    padding: 12px;
+    padding: 20px 12px 20px 12px;
     margin: 30px 0;
     box-shadow: inset $shadow;
     background-color: $blackColor;
@@ -13,11 +13,24 @@
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 
-    img {
-        width: 60px;
-        height: 60px;
-        margin-inline: 20px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+            width: 46px;
+            height: 46px;
+            margin-inline: 20px;
+            border-radius: 20%;
+        }
+
+        p{
+            margin-top: 4px;
+            text-align: center;
+            font-size: 1.4rem;
+        }
     }
+
 
 }
 

@@ -5,9 +5,9 @@ export const langs = {
       ski: "Habilidades",
       pro: "Proyectos",
     },
-    aboutMe: `Soy Juan Manuel Becerra, un desarrollador de front-end enfocado en crear sitios web accesibles con una excelente experiencia de usuario. 
-                Me especializo en React, y busco constantemente mejorar mis habilidades practicando. 
-                Si necesitas ayuda con un proyecto de desarrollo front-end, no dudes en contactarme`,
+    aboutMe: `Soy Juan Manuel Becerra, un desarrollador front-end enfocado en crear sitios web optimizados y accesibles con una excelente experiencia de usuario. 
+              Siempre estoy buscando mejorar mis habilidades a través de proyectos personales y estoy abierto a aprender cosas nuevas. 
+              Si necesitas ayuda con un proyecto de desarrollo front-end, no dudes en contactarme..`,
     education: {
       title: "Educación",
       items: [
@@ -69,9 +69,9 @@ export const langs = {
       ski: "Skills",
       pro: "Projects",
     },
-    aboutMe: `I'm Juan Manuel Becerra, a front-end developer focused on creating optimized and accessible websites with an excellent user experience. 
-    I specialize in React, and I'm constantly looking to improve my skills. 
-    If you need help with a front-end development project, don't hesitate to contact me.`,
+    aboutMe: `I'm Juan Manuel Becerra, a front-end developer who is focused on creating optimized and accessible websites with an excellent user experience. 
+              I'm constantly seeking to improve my skills through personal projects and am always open to learning new things. 
+              If you need assistance with a front-end development project, please do not hesitate to contact me.`,
     education: {
       title: "Education",
       items: [
