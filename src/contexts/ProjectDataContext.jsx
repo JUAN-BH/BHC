@@ -9,8 +9,9 @@ import sassImg from "../assets/imgSkills/sass.svg";
 import viteImg from "../assets/imgSkills/vite.svg";
 import webpackImg from "../assets/imgSkills/webpack.svg";
 import tsImg from "../assets/imgSkills/ts.svg";
+import tailwindImg from "../assets/imgSkills/tailwind.png";
 //*projetcs
-import catAPIImg from "../assets/imgProjects/catAPI.png";
+import catAPIImg from "../assets/imgProjects/catAPINew.png";
 import theForestTempleImg from "../assets/imgProjects/theForestTemple.png";
 import weatherBHCImg from "../assets/imgProjects/weatherBHC.png";
 import todDoImg from "../assets/imgProjects/toDoMachine.png";
@@ -53,10 +54,10 @@ export const ProjectDataContextProvider = ({ children }) => {
     name: "Cat API",
     imgProject: catAPIImg,
     description: catAPIDes,
-    skills: [htmlImg, cssImg, jsImg],
+    skills: [reactImg, viteImg, tsImg, tailwindImg],
     links: {
-      deploy: "https://juan-bh.github.io/Cats_API/",
-      repository: "https://github.com/JUAN-BH/Cats_API",
+      deploy: "https://catsbhc.netlify.app/",
+      repository: "https://github.com/JUAN-BH/newCatAPI",
     },
   });
   const forestTemple = new Project({

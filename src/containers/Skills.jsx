@@ -21,17 +21,6 @@ export const Skills = () => {
   const subTitle =
     langSelected === "es" ? langs.es.skills.subTitle : langs.en.skills.subTitle;
 
-  // const skills = [
-  //   htmlImg,
-  //   cssImg,
-  //   jsImg,
-  //   webpackImg,
-  //   sassImg,
-  //   reactImg,
-  //   viteImg,
-  // ];
-  // const learning = [reduxImg, formikImg];
-
   return (
     <section className="skills" id="skills">
       <h2>{title}</h2>
