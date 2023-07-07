@@ -12,7 +12,7 @@ import tsImg from "../assets/imgSkills/ts.svg";
 import tailwindImg from "../assets/imgSkills/tailwind.png";
 //*projetcs
 import catAPIImg from "../assets/imgProjects/catAPINew.png";
-import theForestTempleImg from "../assets/imgProjects/theForestTemple.png";
+import SHOPPIImg from "../assets/imgProjects/SHOPPI.png";
 import weatherBHCImg from "../assets/imgProjects/weatherBHC.png";
 import todDoImg from "../assets/imgProjects/toDoMachine.png";
 import pokedexImg from "../assets/imgProjects/pokedex.png";
@@ -29,7 +29,7 @@ export const ProjectDataContextProvider = ({ children }) => {
     langSelected === "es"
       ? langs.es.projects.items[0].description
       : langs.en.projects.items[0].description;
-  const forestDes =
+  const SHOPPIDes =
     langSelected === "es"
       ? langs.es.projects.items[1].description
       : langs.en.projects.items[1].description;
@@ -60,14 +60,14 @@ export const ProjectDataContextProvider = ({ children }) => {
       repository: "https://github.com/JUAN-BH/newCatAPI",
     },
   });
-  const forestTemple = new Project({
-    name: "The Forest Temple",
-    imgProject: theForestTempleImg,
-    description: forestDes,
-    skills: [htmlImg, cssImg, jsImg],
+  const SHOPPI = new Project({
+    name: "SHOPPI",
+    imgProject: SHOPPIImg,
+    description: SHOPPIDes,
+    skills: [reactImg, viteImg, tsImg, tailwindImg],
     links: {
-      deploy: "https://juan-bh.github.io/TheForestTemple/",
-      repository: "https://github.com/JUAN-BH/TheForestTemple",
+      deploy: "https://shoppi-bh.netlify.app/",
+      repository: "https://github.com/JUAN-BH/simpleEcommerce",
     },
   });
   const weatherBHC = new Project({
@@ -113,7 +113,7 @@ export const ProjectDataContextProvider = ({ children }) => {
 
   const projectsData = [
     catAPI,
-    forestTemple,
+    SHOPPI,
     weatherBHC,
     toDoMachine,
     pokedex,

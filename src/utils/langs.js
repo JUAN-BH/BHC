@@ -7,7 +7,7 @@ export const langs = {
     },
     aboutMe: `Soy Juan Manuel Becerra, un desarrollador front-end enfocado en crear sitios web optimizados y accesibles con una excelente experiencia de usuario. 
               Siempre estoy buscando mejorar mis habilidades a través de proyectos personales y estoy abierto a aprender cosas nuevas. 
-              Si necesitas ayuda con un proyecto de desarrollo front-end, no dudes en contactarme..`,
+              Si necesitas ayuda con un proyecto de desarrollo front-end, no dudes en contactarme.`,
     education: {
       title: "Educación",
       items: [
@@ -40,8 +40,8 @@ export const langs = {
           description: `Cat API es una página que consume una API sobre gatos. En ella podrás buscar gatos, seleccionarlos como favoritos e incluso subir tu propio gato.`,
         },
         {
-          title: "The Forest Temple",
-          description: `The Forest Temple fue un reto de la empresa Talentum. Se trata de la recolección de los datos que brinda un videojuego. Sin embargo, las estadísticas son falsas porque no se realizó una base de datos.`,
+          title: "SHOPPI",
+          description: `SHOPPI es un sitio web de comercio electrónico simple que consume la API de la tienda falsa de Platzi. La "base de datos" se crea con localStorge, lo que permite al usuario almacenar su información.`,
         },
         {
           title: "Weather BHC",
@@ -104,8 +104,8 @@ export const langs = {
           description: `Cat API is a webpage that consumes an API about cats. On it, you can search for cats, select them as favorites, and even upload your own cat.`,
         },
         {
-          title: "The Forest Temple",
-          description: `The Forest Temple was a challenge from Talentum. It involves collecting data provided by a video game, however, the statistics are fake because no database was created.`,
+          title: "SHOPPI",
+          description: `SHOPPI is a simple e-commerce website consuming a the platzi fake store api. The 'data base' is created with localStorge allowing to the user to store their information.`,
         },
         {
           title: "Weather BHC",
