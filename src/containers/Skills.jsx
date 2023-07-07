@@ -16,10 +16,12 @@ import { langs } from "../utils/langs";
 export const Skills = () => {
   const { langSelected } = useLangContext();
 
-  const title =
-    langSelected === "es" ? langs.es.skills.title : langs.en.skills.title;
-  const subTitle =
-    langSelected === "es" ? langs.es.skills.subTitle : langs.en.skills.subTitle;
+  const title = langSelected.includes("es")
+    ? langs.es.skills.title
+    : langs.en.skills.title;
+  const subTitle = langSelected.includes("es")
+    ? langs.es.skills.subTitle
+    : langs.en.skills.subTitle;
 
   return (
     <section className="skills" id="skills">

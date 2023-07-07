@@ -8,8 +8,9 @@ export const Education = () => {
   const educationData = useEducationDataContext();
   const { langSelected } = useLangContext();
 
-  const title =
-    langSelected === "es" ? langs.es.education.title : langs.en.education.title;
+  const title = langSelected.includes("es")
+    ? langs.es.education.title
+    : langs.en.education.title;
   return (
     <section className="education" id="education">
       <h2>{title}</h2>

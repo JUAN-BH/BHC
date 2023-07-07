@@ -8,19 +8,20 @@ import { SocialMedia } from "../containers/SocialMedia";
 export const InfoAboutMe = () => {
   const { langSelected } = useLangContext();
 
-  const text = langSelected === "es" ? langs.es.aboutMe : langs.en.aboutMe;
+  const text = langSelected.includes("es")
+    ? langs.es.aboutMe
+    : langs.en.aboutMe;
   return (
     <article className="aboutMe__info">
       <Io animation="animate__animated animate__fadeIn">
         <div className="">
-
-         <h1>Juan Manuel Becerra</h1>
-         <h2>Front-end dev</h2>
+          <h1>Juan Manuel Becerra</h1>
+          <h2>Front-end dev</h2>
           <div className="aboutMe__info__social">
-          <SocialMedia/>
-          <BtnDownloader />
+            <SocialMedia />
+            <BtnDownloader />
           </div>
-         <p>{text}</p>
+          <p>{text}</p>
         </div>
       </Io>
     </article>

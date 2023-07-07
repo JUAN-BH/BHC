@@ -16,7 +16,7 @@ const BtnDownloader = () => {
   };
 
   return (
-    <button className="btn--cv" onClick={generatePdf}>
+    <button className="btn--cv textMenu" onClick={generatePdf}>
       {langSelected == "es" ? "Descargar HV" : "Download CV"}
     </button>
   );

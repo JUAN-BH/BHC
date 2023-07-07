@@ -7,9 +7,15 @@ import { SelectLang } from "./SelectLang";
 
 export const MenuDesk = () => {
   const { langSelected } = useLangContext();
-  const edu = langSelected === "es" ? langs.es.menu.edu : langs.en.menu.edu;
-  const ski = langSelected === "es" ? langs.es.menu.ski : langs.en.menu.ski;
-  const pro = langSelected === "es" ? langs.es.menu.pro : langs.en.menu.pro;
+  const edu = langSelected.includes("es")
+    ? langs.es.menu.edu
+    : langs.en.menu.edu;
+  const ski = langSelected.includes("es")
+    ? langs.es.menu.ski
+    : langs.en.menu.ski;
+  const pro = langSelected.includes("es")
+    ? langs.es.menu.pro
+    : langs.en.menu.pro;
 
   return (
     <header>
@@ -17,13 +23,19 @@ export const MenuDesk = () => {
         <article className="menuDesk">
           <nav className="menuDesk__nav">
             <Link to="education" spy={true} smooth={true} duration={500}>
-              <button className="menuDesk--btn btn">{edu}</button>
+              <button className="menuDesk--btn btn">
+                <p className="textMenu">{edu}</p>
+              </button>
             </Link>
             <Link to="skills" spy={true} smooth={true} duration={500}>
-              <button className="menuDesk--btn btn">{ski}</button>
+              <button className="menuDesk--btn btn">
+                <p className="textMenu">{ski}</p>
+              </button>
             </Link>
             <Link to="projects" spy={true} smooth={true} duration={500}>
-              <button className="menuDesk--btn btn">{pro}</button>
+              <button className="menuDesk--btn btn">
+                <p className="textMenu">{pro}</p>
+              </button>
             </Link>
           </nav>
 

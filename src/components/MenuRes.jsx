@@ -9,9 +9,15 @@ import { Io } from "../containers/Io";
 export const MenuRes = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { langSelected } = useLangContext();
-  const edu = langSelected === "es" ? langs.es.menu.edu : langs.en.menu.edu;
-  const ski = langSelected === "es" ? langs.es.menu.ski : langs.en.menu.ski;
-  const pro = langSelected === "es" ? langs.es.menu.pro : langs.en.menu.pro;
+  const edu = langSelected.includes("es")
+    ? langs.es.menu.edu
+    : langs.en.menu.edu;
+  const ski = langSelected.includes("es")
+    ? langs.es.menu.ski
+    : langs.en.menu.ski;
+  const pro = langSelected.includes("es")
+    ? langs.es.menu.pro
+    : langs.en.menu.pro;
 
   function handleSetActive() {
     setIsOpen(false);
@@ -31,7 +37,7 @@ export const MenuRes = () => {
             duration={500}
             onSetActive={handleSetActive}
           >
-            <button className="btn">{edu}</button>
+            <button className="btn textMenu">{edu}</button>
           </Link>
           <Link
             to="skills"
@@ -40,7 +46,7 @@ export const MenuRes = () => {
             duration={500}
             onSetActive={handleSetActive}
           >
-            <button className="btn">{ski}</button>
+            <button className="btn textMenu">{ski}</button>
           </Link>
           <Link
             to="projects"
@@ -49,7 +55,7 @@ export const MenuRes = () => {
             duration={500}
             onSetActive={handleSetActive}
           >
-            <button className="btn">{pro}</button>
+            <button className="btn textMenu">{pro}</button>
           </Link>
           <SelectLang setIsOpen={setIsOpen} />
         </div>

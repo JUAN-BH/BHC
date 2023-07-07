@@ -25,30 +25,24 @@ const ProjectDataContext = createContext();
 export const ProjectDataContextProvider = ({ children }) => {
   const { langSelected } = useLangContext();
 
-  const catAPIDes =
-    langSelected === "es"
-      ? langs.es.projects.items[0].description
-      : langs.en.projects.items[0].description;
-  const SHOPPIDes =
-    langSelected === "es"
-      ? langs.es.projects.items[1].description
-      : langs.en.projects.items[1].description;
-  const weatherDes =
-    langSelected === "es"
-      ? langs.es.projects.items[2].description
-      : langs.en.projects.items[2].description;
-  const toDoDes =
-    langSelected === "es"
-      ? langs.es.projects.items[3].description
-      : langs.en.projects.items[3].description;
-  const pokeDes =
-    langSelected === "es"
-      ? langs.es.projects.items[4].description
-      : langs.en.projects.items[4].description;
-  const moviesDes =
-    langSelected === "es"
-      ? langs.es.projects.items[5].description
-      : langs.en.projects.items[5].description;
+  const catAPIDes = langSelected.includes("es")
+    ? langs.es.projects.items[0].description
+    : langs.en.projects.items[0].description;
+  const SHOPPIDes = langSelected.includes("es")
+    ? langs.es.projects.items[1].description
+    : langs.en.projects.items[1].description;
+  const weatherDes = langSelected.includes("es")
+    ? langs.es.projects.items[2].description
+    : langs.en.projects.items[2].description;
+  const toDoDes = langSelected.includes("es")
+    ? langs.es.projects.items[3].description
+    : langs.en.projects.items[3].description;
+  const pokeDes = langSelected.includes("es")
+    ? langs.es.projects.items[4].description
+    : langs.en.projects.items[4].description;
+  const moviesDes = langSelected.includes("es")
+    ? langs.es.projects.items[5].description
+    : langs.en.projects.items[5].description;
 
   const catAPI = new Project({
     name: "Cat API",

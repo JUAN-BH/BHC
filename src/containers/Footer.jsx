@@ -5,7 +5,7 @@ import { langs } from "../utils/langs";
 export const Footer = () => {
   const { langSelected } = useLangContext();
 
-  const upt = langSelected === "es" ? langs.es.lastUpt : langs.en.lastUpt;
+  const upt = langSelected.includes("es") ? langs.es.lastUpt : langs.en.lastUpt;
 
   return (
     <footer>

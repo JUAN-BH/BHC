@@ -1,46 +1,46 @@
 header {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-    div {
-        position: fixed;
-        top: 20px;
-        z-index: 10;
-    }
+  div {
+    position: fixed;
+    top: 20px;
+    z-index: 10;
+  }
 }
 
 .menuDesk {
-    display: none;
+  display: none;
 
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 300px;
-        padding: 8px;
-        border-radius: 12px;
-        box-shadow: $shadow;
-        background-color: $blackColor;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: $shadow;
+    background-color: $blackColor;
 
-        .menuDesk--btn {
-            transition: all 0.2s;
-        }
-
-        .menuDesk--btn:hover {
-            background-color: rgb(52, 152, 219);
-            font-weight: 400;
-            color: white;
-            scale: 1.1;
-        }
+    .menuDesk--btn {
+      transition: all 0.2s;
     }
 
-    // right: calc(20% - 150px);
+    .menuDesk--btn:hover {
+      background-color: rgb(52, 152, 219);
+      font-weight: 400;
+      color: white;
+      scale: 1.1;
+    }
+  }
+
+  // right: calc(20% - 150px);
 }
 
 @include media-up(lg) {
-    .menuDesk {
-        display: flex;
-        align-items: center;
-        margin-right: 20px;
-    }
+  .menuDesk {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
 }

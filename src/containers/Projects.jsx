@@ -8,8 +8,9 @@ export const Projects = () => {
   const projectsData = useProjectDataContext();
   const { langSelected } = useLangContext();
 
-  const title =
-    langSelected === "es" ? langs.es.projects.title : langs.en.projects.title;
+  const title = langSelected.includes("es")
+    ? langs.es.projects.title
+    : langs.en.projects.title;
 
   return (
     <section className="projects" id="projects">

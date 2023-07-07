@@ -11,16 +11,16 @@ export const SelectLang = ({ setIsOpen }) => {
   return (
     <>
       <select
-        value={langSelected}
+        value={langSelected.includes("es") ? "es" : "en"}
         name=""
         id=""
         onChange={changeLang}
-        className="btn selectLang"
+        className="btn selectLang textMenu"
       >
-        <option value="en">
+        <option className="textMenu" value="en">
           {langSelected === "es" ? "Ingles" : "English"}
         </option>
-        <option value="es">
+        <option className="textMenu" value="es">
           {langSelected === "es" ? "Español" : "Spanish"}
         </option>
       </select>

@@ -1,9 +1,14 @@
-import React, { useContext, useState, createContext } from "react";
+import React, { useContext, useState, createContext, useEffect } from "react";
 
 const LangContext = createContext();
 
 export const LangContextProvider = ({ children }) => {
-  const [langSelected, setLangSelected] = useState(navigator.language);
+  const [langSelected, setLangSelected] = useState("");
+  useEffect(() => {
+    const navigatorLang = navigator.language;
+    setLangSelected(navigatorLang);
+  }, []);
+
   const langData = { langSelected, setLangSelected };
   return (
     <LangContext.Provider value={langData}>{children}</LangContext.Provider>
