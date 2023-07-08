@@ -126,6 +126,6 @@ export const langs = {
         },
       ],
     },
-    lastUpt: "Last update",
+    lastUpt: "Last update:",
   },
 };
