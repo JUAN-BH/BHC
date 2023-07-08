@@ -12,7 +12,7 @@ import tsImg from "../assets/imgSkills/ts.svg";
 import tailwindImg from "../assets/imgSkills/tailwind.png";
 //*projetcs
 import catAPIImg from "../assets/imgProjects/catAPINew.png";
-import SHOPPIImg from "../assets/imgProjects/shoppi.png";
+import SHOPPIImg from "../assets/imgProjects/SHOPPI.png";
 import weatherBHCImg from "../assets/imgProjects/weatherBHC.png";
 import todDoImg from "../assets/imgProjects/toDoMachine.png";
 import pokedexImg from "../assets/imgProjects/pokedex.png";
