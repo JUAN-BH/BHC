@@ -24,6 +24,15 @@ export const langs = {
         },
       ],
     },
+    experience: {
+      title: "Experiencia",
+      items: [
+        {
+          title: "Web Developer | Zero to One",
+          description: `Desarrollo, modificación y optimización de sitios web de comercio electrónico utilizando herramientas como HTML, CSS, JavaScript y Shopify.`,
+        }
+      ],
+    },
     skills: {
       title: "Habilidades",
       subTitle: "Actualmente aprendiendo",
@@ -86,6 +95,15 @@ export const langs = {
           description: `Thanks to the Platzi platform, I have strengthened, improved, and acquired new skills in web development, specializing in front-end development. 
                         I never stop learning thanks to this platform and have completed over 20 courses.`,
         },
+      ],
+    },
+    experience: {
+      title: "Experience",
+      items: [
+        {
+          title: "Web Developer | Zero to One",
+          description: `Development, modification, and optimization of e-commerce websites using tools such as HTML, CSS, JavaScript, and Shopify.`,
+        }
       ],
     },
     skills: {

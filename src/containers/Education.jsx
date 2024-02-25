@@ -1,5 +1,5 @@
 import React from "react";
-import { EducationItem } from "../components/EducationItem";
+import { InfoItem } from "../components/InfoItem";
 import { useEducationDataContext } from "../contexts/EducationDataContext";
 import { useLangContext } from "../contexts/LangContext";
 import { langs } from "../utils/langs";
@@ -15,7 +15,7 @@ export const Education = () => {
     <section className="education" id="education">
       <h2>{title}</h2>
       {educationData.map((e) => (
-        <EducationItem education={e} key={e.name} />
+        <InfoItem education={e} key={e.name} />
       ))}
     </section>
   );

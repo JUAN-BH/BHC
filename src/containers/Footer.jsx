@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <footer>
       <article>
-        <p>{upt} 07/07/2023</p>
+        <p>{upt} 02/25/2023</p>
       </article>
     </footer>
   );

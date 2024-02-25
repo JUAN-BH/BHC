@@ -1,7 +1,7 @@
 import React from "react";
 import { Io } from "../containers/Io";
 
-export const EducationItem = ({ education }) => {
+export const InfoItem = ({ education }) => {
   return (
     <article className="education__educationItem">
       <Io animation="animate__animated animate__fadeInUp">

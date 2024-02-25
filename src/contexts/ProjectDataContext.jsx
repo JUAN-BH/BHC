@@ -108,8 +108,8 @@ export const ProjectDataContextProvider = ({ children }) => {
   const projectsData = [
     catAPI,
     SHOPPI,
-    weatherBHC,
-    toDoMachine,
+    // weatherBHC,
+    // toDoMachine,
     pokedex,
     movies,
   ];
