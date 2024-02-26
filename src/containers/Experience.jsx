@@ -26,7 +26,7 @@ export const Experience = () => {
     : langs.en.experience.title;
 
   return (
-    <section className="education" id="education">
+    <section className="education" id="experience">
       <h2>{title}</h2>
       {expData.map((e) => (
         <InfoItem education={e} key={e.name} />

@@ -10,9 +10,12 @@ export const MenuDesk = () => {
   const edu = langSelected.includes("es")
     ? langs.es.menu.edu
     : langs.en.menu.edu;
-  const ski = langSelected.includes("es")
-    ? langs.es.menu.ski
-    : langs.en.menu.ski;
+  // const ski = langSelected.includes("es")
+  //   ? langs.es.menu.ski
+  //   : langs.en.menu.ski;
+  const exp = langSelected.includes("es")
+    ? langs.es.menu.exp
+    : langs.en.menu.exp;
   const pro = langSelected.includes("es")
     ? langs.es.menu.pro
     : langs.en.menu.pro;
@@ -27,9 +30,9 @@ export const MenuDesk = () => {
                 <p className="textMenu">{edu}</p>
               </button>
             </Link>
-            <Link to="skills" spy={true} smooth={true} duration={500}>
+            <Link to="experience" spy={true} smooth={true} duration={500}>
               <button className="menuDesk--btn btn">
-                <p className="textMenu">{ski}</p>
+                <p className="textMenu">{exp}</p>
               </button>
             </Link>
             <Link to="projects" spy={true} smooth={true} duration={500}>

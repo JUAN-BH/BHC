@@ -12,9 +12,12 @@ export const MenuRes = () => {
   const edu = langSelected.includes("es")
     ? langs.es.menu.edu
     : langs.en.menu.edu;
-  const ski = langSelected.includes("es")
-    ? langs.es.menu.ski
-    : langs.en.menu.ski;
+  // const ski = langSelected.includes("es")
+  //   ? langs.es.menu.ski
+  //   : langs.en.menu.ski;
+  const exp = langSelected.includes("es")
+    ? langs.es.menu.exp
+    : langs.en.menu.exp;
   const pro = langSelected.includes("es")
     ? langs.es.menu.pro
     : langs.en.menu.pro;
@@ -40,13 +43,13 @@ export const MenuRes = () => {
             <button className="btn textMenu">{edu}</button>
           </Link>
           <Link
-            to="skills"
+            to="experience"
             spy={true}
             smooth={true}
             duration={500}
             onSetActive={handleSetActive}
           >
-            <button className="btn textMenu">{ski}</button>
+            <button className="btn textMenu">{exp}</button>
           </Link>
           <Link
             to="projects"

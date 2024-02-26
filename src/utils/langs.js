@@ -3,6 +3,7 @@ export const langs = {
     menu: {
       edu: "Educación",
       ski: "Habilidades",
+      exp: "Experiencia",
       pro: "Proyectos",
     },
     aboutMe: `Soy Juan Manuel Becerra, un desarrollador front-end enfocado en crear sitios web optimizados y accesibles con una excelente experiencia de usuario. 
@@ -76,6 +77,7 @@ export const langs = {
     menu: {
       edu: "Education",
       ski: "Skills",
+      exp: "Experience",
       pro: "Projects",
     },
     aboutMe: `I'm Juan Manuel Becerra, a front-end developer who is focused on creating optimized and accessible websites with an excellent user experience. 
