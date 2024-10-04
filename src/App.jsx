@@ -11,7 +11,7 @@ import { Skills } from "./containers/Skills";
 function App() {
   return (
     <main>
-      <LavaBlobs />
+      {/* <LavaBlobs /> */}
       <MenuRes />
       <MenuDesk />
       <AboutMe />

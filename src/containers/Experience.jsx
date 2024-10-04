@@ -18,6 +18,18 @@ export const Experience = () => {
       name: ZTOTitle,
       date: `07/2023 - ${langSelected.includes("es") ? "presente" : "present"}`,
       description: ZTODescription,
+      projects: [
+        {
+          name: "MyWay HAIR DNA",
+          link: "https://mywayhairdna.com/",
+          image: "./src/assets/imgProjects/MyWayHairDna.png",
+        },
+        {
+          name: "ReduSculpt",
+          link: "https://redusculpt.com/pages/home",
+          image: "./src/assets/imgProjects/redusculpt.png",
+        }
+      ],
     },
   ];
 

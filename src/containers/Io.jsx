@@ -17,26 +17,28 @@ export const Io = ({ children, animation }) => {
     );
     observer.observe(ref.current);
 
-    // return () => {
-    //   observer.unobserve(ref.current);
-    // };
+    // Cleanup observer on component unmount
+    return () => {
+      observer.unobserve(ref.current);
+    };
   }, []);
 
   return (
     <div ref={ref}>
       {React.Children.map(children, (child) => {
-        // obtener las clases originales
+        if (!child) {
+          return null;
+        }
+
+        // Obtener las clases originales
         const originalClasses = child.props.className || "";
-        // agregar las nuevas clases y crear un nuevo elemento con ambas clases
+        // Agregar las nuevas clases y crear un nuevo elemento con ambas clases
         const newClasses = originalClasses + " " + animation;
         return React.cloneElement(child, {
           style: {
             opacity: isVisible ? 1 : 0,
-            // transform: isVisible ? animation : "none",
-            // transition: "opacity 1s, transform 1s",
           },
           className: isVisible ? newClasses : "",
-          //   className: `${isVisible && animation}`,
         });
       })}
     </div>
