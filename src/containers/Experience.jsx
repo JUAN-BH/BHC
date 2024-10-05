@@ -2,6 +2,8 @@ import React from "react";
 import { InfoItem } from "../components/InfoItem";
 import { useLangContext } from "../contexts/LangContext";
 import { langs } from "../utils/langs";
+import mwImg from "../assets/imgProjects/MyWayHairDna.png"
+import rsImg from "../assets/imgProjects/redusculpt.png"
 
 export const Experience = () => {
   const { langSelected } = useLangContext();
@@ -22,12 +24,12 @@ export const Experience = () => {
         {
           name: "MyWay HAIR DNA",
           link: "https://mywayhairdna.com/",
-          image: "/src/assets/imgProjects/MyWayHairDna.png",
+          image: mwImg,
         },
         {
           name: "ReduSculpt",
           link: "https://redusculpt.com/pages/home",
-          image: "/src/assets/imgProjects/reduSculpt.png",
+          image: rsImg,
         }
       ],
     },
