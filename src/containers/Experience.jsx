@@ -22,12 +22,12 @@ export const Experience = () => {
         {
           name: "MyWay HAIR DNA",
           link: "https://mywayhairdna.com/",
-          image: "./src/assets/imgProjects/MyWayHairDna.png",
+          image: "/src/assets/imgProjects/MyWayHairDna.png",
         },
         {
           name: "ReduSculpt",
           link: "https://redusculpt.com/pages/home",
-          image: "./src/assets/imgProjects/redusculpt.png",
+          image: "/src/assets/imgProjects/reduSculpt.png",
         }
       ],
     },
